@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROG 1124 - Group 1</title>
+    <!-- Team Name : LambdaX - Group 1
+         PROG 1180-02
+         Banuka Kumara Ambegoda
+         Ravisanka Siriwardenage
+         Adam Augier
+         Akash Slatch
+         Amritpal Singh -->
+     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles2.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+</head>
+<scrip>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo horizontal-logo" src="assets/logo.jpg" height="15%" width="15%" alt="BeyondX logo">
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Orders
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="cus_order.html">Customer Orders</a>
+              <a class="dropdown-item" href="inv_order.html">Inventory Orders</a>
+              <a class="dropdown-item" href="sale_main.html">Sales</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Inventory
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <a class="dropdown-item" href="inventory.html">Inventory</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="items.html">Items</a>
+            </div>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Personnals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="customer.html">Customers</a>
+              <a class="dropdown-item" href="supplier.html">Suppliers</a>
+              <a class="dropdown-item" href="staff.html">Staff</a>
+              <a class="dropdown-item" href="user.html">User</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--Form Start-->
+
+      <section class="columns">
+        <div class="column">
+          <header>
+            <h1>Add New Customer Order</h1>
+          </header>
+          <div class="d-flex justify-content-center">
+          <div class="col-md-32">
+            <form class="form-horizontal">
+          <fieldset>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="Order Number">Invoice Number</label>  
+            <div class="col-md-13">
+            <input id="Order Number2" name="Order Number" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="CustomerName2">Customer Name</label>  
+            <div class="col-md-13">
+            <input id="CustomerName2" name="CustomerName2" type="text" placeholder="e.g Joseph henry" class="form-control input-md" required="">
+            <ul class="input-requirements">
+              <li>Enter customer full name.</li>
+              <li>First alphabet should be captial.</li>
+            </ul>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="Address2">Customer Address</label>
+            <div class="col-md-13">                     
+              <textarea class="form-control" id="Address2" name="Address2"></textarea>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-13 control-label"  for="OrderDetails">Order Details</label>
+            <div class="col-md-13">                     
+              <textarea class="form-control" type = "text" id="OrderDetails2" placeholder= "e.g Order proccessing yet "onfocus="" name="OrderDetails"></textarea>
+              <ul class="input-requirements">
+              </ul>
+            </div>
+          </div>
+
+          <!-- Select Multiple -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="selectItems">Select Items</label>
+            <div class="col-md-13">
+              <select id="selectItems2" name="selectItems" class="form-control" multiple="multiple">
+                <option value=1>Push Gas Lawn Mower</option>
+                <option value=2>Battery Powered Mower</option>
+                <option value="3">Corded Push Mowers</option>
+                <option value="4">Riding Lawn Mowers</option>
+                <option value="5">Hand Held Electric Mower</option>
+                <option value="6">Hand Held Battery Mower</option>
+                <option value="7">Hand Held Gas Mower</option>
+                <option value="8">Hand Held Battery Mower</option>
+                <option value="9">Lawn Mower Utility Kit</option>
+                <option value="10">Lawn Mower Tire</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="addButton1"></label>
+            <div class="col-md-13">
+              <button id="addButton2" name="addButton1" class="btn btn-success">Add Item</button>
+            </div>
+          </div>
+
+          <!-- Select Multiple -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="selectedItems">Selected Items</label>
+            <div class="col-md-13">
+              <select id="selectedItems2" name="selectedItems" class="form-control" multiple="multiple">
+              </select>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="removeButton"></label>
+            <div class="col-md-13">
+              <button id="removeButton2" name="removeButton" class="btn btn-danger">Remove Item</button>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="OrderValue">Order Value</label>  
+            <div class="col-md-13">
+            <input id="OrderValue2" name="OrderValue" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="StaffID">Order Confirmed By &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <div class="col-md-13">
+              <select id="StaffID2" name="StaffID" class="form-control">
+                <option value="-1">Select Staff Member</option>
+                <option value="1">John Cleark</option>
+                <option value="2">James Man</option>
+                <option value="3">John Gillian</option>
+                <option value="4">Seth Cool</option>
+                <option value="5">Randy Thompson</option>
+                <option value="6">Tanya Tate</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="OrderDate">Order Date</label>  
+            <div class="col-md-13">
+              <p> <input type="date" id="datepicker" max="2022-11-14"></p>
+              
+            </div>
+          </div>
+
+          <!-- File Button --> 
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="Invoice">Attach Invoice</label>
+            <div class="col-md-13">
+              <input id="Invoice2" name="Invoice" class="input-file" type="file">
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="submit"></label>
+            <div class="col-md-13 d-flex justify-content-center">
+              <button id="submit2" type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+
+          </fieldset>
+        </form>
+          </div>
+        </div>
+        </div>
+
+        <div class="column">
+          <header>
+            <h1>Edit Existing Customer Orders</h1>
+          </header>
+          <div class="d-flex justify-content-center">
+          <div class="col-md-32">
+          <form class="form-horizontal">
+          <fieldset>
+
+          <!-- 2nd form -->
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="order">Choose Order</label>
+            <div class="col-md-13">
+              <select id="order" name="order" class="form-control">
+                <option value="-1">Select by Invoice Number</option>
+                <option value="1">3232</option>
+                <option value="2">3234</option>
+                <option value="3">3243</option>
+                <option value="4">3123</option>
+                <option value="5">3323</option>
+                <option value="6">3325</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="CustomerName">Customer Name</label>  
+            <div class="col-md-13">
+            <input id="CustomerName" name="CustomerName" type="text" placeholder="" class="form-control input-md" required="">
+            <ul class="input-requirements">
+              <li>Enter customer full name.</li>
+              <li>First alphabet should be captial.</li>
+            </ul>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="Address">Customer Address</label>
+            <div class="col-md-13">                     
+              <textarea class="form-control" id="Address" name="Address"></textarea>
+            </div>
+          </div>
+
+          <!-- Multiple Radios (inline) -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="radios">Order Status</label>
+            <div class="col-md-13"> 
+              <label class="radio-inline" for="radios-0">
+                <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                Pending
+              </label> 
+              <label class="radio-inline" for="radios-1">
+                <input type="radio" name="radios" id="radios-1" value="2">
+                Out of Stock
+              </label> 
+              <label class="radio-inline" for="radios-2">
+                <input type="radio" name="radios" id="radios-2" value="3">
+                Completed
+              </label> 
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="OrderDetails">Order Details</label>
+            <div class="col-md-13">                     
+              <textarea class="form-control" id="OrderDetails" name="OrderDetails" placeholder="Include data including new reference numbers here."></textarea>
+            </div>
+          </div>
+
+          <!-- Select Multiple -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="selectItems">Select Items</label>
+            <div class="col-md-13">
+              <select id="selectItems" name="selectItems" class="form-control" multiple="multiple">
+                <option value="1">Push Gas Lawn Mower</option>
+                <option value="2">Battery Powered Mower</option>
+                <option value="3">Corded Push Mowers</option>
+                <option value="4">Riding Lawn Mowers</option>
+                <option value="5">Hand Held Electric Mower</option>
+                <option value="6">Hand Held Battery Mower</option>
+                <option value="7">Hand Held Gas Mower</option>
+                <option value="8">Hand Held Battery Mower</option>
+                <option value="9">Lawn Mower Utility Kit</option>
+                <option value="10">Lawn Mower Tire</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="addButton1"></label>
+            <div class="col-md-13">
+              <button id="addButton1" name="addButton1" class="btn btn-success">Add Item</button>
+            </div>
+          </div>
+
+          <!-- Select Multiple -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="selectedItems">Selected Items</label>
+            <div class="col-md-13">
+              <select id="selectedItems" name="selectedItems" class="form-control" multiple="multiple">
+              </select>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="removeButton"></label>
+            <div class="col-md-13">
+              <button id="removeButton" name="removeButton" class="btn btn-danger">Remove Item</button>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="OrderValue">Order Value</label>  
+            <div class="col-md-13">
+            <input id="OrderValue" name="OrderValue" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="StaffID">Order Confirmed By</label>
+            <div class="col-md-13">
+              <select id="StaffID" name="StaffID" class="form-control">
+                <option value="-1">Select Staff Member</option>
+                <option value="1">John Cleark</option>
+                <option value="2">James Man</option>
+                <option value="3">John Gillian</option>
+                <option value="4">Seth Cool</option>
+                <option value="5">Randy Thompson</option>
+                <option value="6">Tanya Tate</option>
+              </select>
+            </div>
+          </div>
+
+          
+
+          <!-- File Button --> 
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="Invoice">Attach Invoice</label>
+            <div class="col-md-13">
+              <input id="Invoice" name="Invoice" class="input-file" type="file">
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-13 control-label" for="submit"></label>
+            <div class="col-md-13 d-flex justify-content-center">
+              <button id="submit" name="submit" class="btn btn-primary">Update</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
+
+        </div>
+      </div>
+    </div>
+      </section>
+
+
+     <!--Footer-->
+     <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Inventory</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inventory.html">Inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="staff.html">Sales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Orders</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cust_order.html">Customer Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inv_order.html">Inventory Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="supplier.html">Suppliers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Contact & Support</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link"><i class="fas fa-phone"></i>(637) 558-2256</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-comments"></i>Live chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        
+        <div class="row text-center">
+          
+          <div class="col-md-12 box">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              </li>
+            </ul>
+          </div>            
+        </div>
+      </div>
+      <br>
+      <div class="col-md-12 box" style="padding-left: 46%;">
+        <span class="copyright quick-links">Copyright &copy; LamdaX <script>document.write(new Date().getFullYear())</script>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("addButton2").addEventListener("click", function(){
+        let e = document.getElementById("selectItems2");
+        let selection = e.options[e.selectedIndex].text;
+        document.getElementById('selectedItems2').innerHTML+=`<option value="">${selection}</option>`;
+
+        
+        var itemValue = e.options[e.selectedIndex].value;
+        document.getElementById("OrderValue2").value += itemValue;
+        
+
+        
+      });
+
+
+
+      document.getElementById("removeButton2").addEventListener("click", function(){
+        let x = document.getElementById("selectedItems2");
+        x.remove(x.selectedIndex);
+      });
+
+      document.getElementById("addButton1").addEventListener("click", function(){
+        let e = document.getElementById("selectItems");
+        let selection = e.options[e.selectedIndex].text;
+        document.getElementById('selectedItems').innerHTML+=`<option value="">${selection}</option>`;
+      });
+
+      document.getElementById("removeButton").addEventListener("click", function(){
+        let x = document.getElementById("selectedItems");
+        x.remove(x.selectedIndex);
+      });
+      
+      document.getElementById("submit").addEventListener("click", function(){
+        let e = document.getElementById("order");
+        let t1 = e.options[e.selectedIndex].text;
+        let t2 = document.getElementById("OrderDetails").value;
+        let t3 = document.getElementById("OrderValue").value;
+        let t4 = document.getElementById("CustomerName").value;
+        let t5 = document.getElementById("Address").value;
+        if((t1 != "Select by Order Number") && (t2 != "") && (t3 != "") && (t4 != "") && (t5 != "")){
+          let d = confirm("Are you sure that you want to update this record?");
+          if(d){
+            alert("Order Updated Succesfully!");
+          }
+        }
+        else{
+          alert("Please retry with appropriate inputs!");
+        }
+        
+        
+      });
+
+
+    document.getElementById("submit2").addEventListener("click", function(){
+      
+      let t1 = document.getElementById("Order Number2").value;
+      let t2 = document.getElementById("OrderDetails2").value;
+      let t3 = document.getElementById("OrderValue2").value;
+      let t4 = document.getElementById("OrderDate2").value;
+      let t5 = document.getElementById("CustomerName2").value;
+      let t6 = document.getElementById("Address2").value;
+      if((t1 != "") && (t2 != "") && (t3 != "") && (t4 != "") && (t5 != "") && (t6 != "")){
+        alert("Order Created Succesfully!", 
+              ` Order : ${t2} \n
+               Value : $${t3} \n
+               Date : ${t4}`);
+      }
+      else{
+        alert("Please retry after filling up all the necessary fields");
+      }
+
+    }); 
+    
+  document.getElementById("Order Number2").value =Math.floor(Math.random()*(4000 - 3000 +1)+ 3000);
+
+
+    
+      
+    </script>
+    
+    <script src="js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+    
+</body>
+</html>
