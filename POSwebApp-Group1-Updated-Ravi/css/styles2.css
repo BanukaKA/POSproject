@@ -1,0 +1,284 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+/* Team Name : LambdaX - Group 1
+PROG 1180-02
+Banuka Kumara Ambegoda
+Ravisanka Siriwardenage
+Adam Augier
+Akash Slatch
+Amritpal Singh 
+2022-10-24*/
+
+body {
+  background: linear-gradient( rgba(215, 207, 207, 0.189), rgba(26, 24, 24, 0.5) );
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+  }
+
+  label{
+    font-weight: bold;
+  }
+  
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+  
+  .dropdown-toggle::after {
+     transition: transform 0.5s linear; 
+  }
+  
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(5px);
+  }
+  
+  .dropdown-menu {
+    margin-top: 0;
+  }
+  
+  a {
+    color: #d3d3d3;
+  }
+  
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ::selection {
+    background: #dbdad7;
+    text-shadow: none;
+  }
+
+  header {
+    writing-mode: vertical-lr;
+    background: rgba(7, 196, 0, 0.466);
+  }
+  
+  h1 {
+    margin-inline-start: 4rem;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  footer {
+    padding: 2rem 0;
+    background-color: #212529;
+  }
+  
+  .footer-column:not(:first-child) {
+    padding-top: 2rem;
+  }
+  @media (min-width: 768px) {
+    .footer-column:not(:first-child) {
+      padding-top: 0rem;
+    }
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  .footer-column .nav-item .nav-link {
+    padding: 0.1rem 0;
+  }
+  .footer-column .nav-item span.nav-link {
+    color: #6c757d;
+  }
+  .footer-column .nav-item span.footer-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .footer-column .nav-item .fas {
+    margin-right: 0.5rem;
+  }
+  .footer-column ul {
+    display: inline-block;
+  }
+  @media (min-width: 768px) {
+    .footer-column ul {
+      text-align: left;
+    }
+  }
+  
+  ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a:active,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:hover {
+    background-color: #ffffff;
+  }
+  
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #1a1d20;
+  }
+
+  .columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  border-right: 10px solid rgb(5, 5, 5);
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 2px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 4rem;
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+.column:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:nth-last-child(2) {
+    margin-right: 0;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+  
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
+.copyright {
+  color: white;
+}
+  
+.fa-ellipsis-h {
+  color: rgb(114, 114, 114);
+  padding: 2rem 0;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #cd9cf2;
+    
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1));
+    
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1))
+}
+
+/**Amrit css opening*/
+.form-style ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style ul li{
+	display: block;
+	margin-bottom: 15px;
+
+}
+
+.form-style ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+    margin-top: 5px;
+	border: 1px solid #B0CFE0;
+	
+}
+
+.form-style ul li .field-full{
+	width: 100%;
+}
+
+.form-style{
+	max-width: 500px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 80px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+
+    .first-sec {
+    width: 48%;
+    margin-right: 3%;
+    display: inline-block;}
+
+    .second-sec {
+    width: 48%;
+    display: inline-block;
+    }
+    .form-style ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+
+
+input[disabled],
+textarea[disabled],
+select[disabled],
+option[disabled],
+button[disabled] {
+  cursor: not-allowed;
+}
+
+ 
+input:not([type="submit"]) + .input-requirements {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-out;  
+}
+
+
+
+input:not([type="submit"]):hover + .input-requirements,
+input:not([type="submit"]):focus + .input-requirements,
+input:not([type="submit"]):active + .input-requirements {
+  max-height: 1000px; /* any large number (bigger then the .input-requirements list) */
+  transition: max-height 1s ease-in;
+}
+  
+/**Amrith css closing*/

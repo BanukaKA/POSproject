@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROG 1124 - Group 1</title>
+    <!-- Team Name : LambdaX - Group 1
+         PROG 1180-02
+         Banuka Kumara Ambegoda
+         Ravisanka Siriwardenage
+         Adam Augier
+         Akash Slatch
+         Amritpal Singh -->
+     <!-- Bootstrap -->
+   <link href="css/payment_style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="loader">
+    <img src="https://github.com/redouand/set-Preloader/blob/master/load-gif.gif?raw=true" alt="">
+  </div>
+    <!-- 002: Credit Card Form -->
+<form action="javascript:alert('submit')" class="form-credit">
+    <div class="card__container">
+      <h1>Payment Info</h1>
+      <div class="card" id="card">
+        <div class="field card-num">
+          <input id="card_num" required pattern="(\d{4}\s?){4}" placeholder="0000 0000 0000 0000" maxlength="19">
+          <label for="card_num">Card Number</label>
+        <div class ="cardDetails"><a>Enter your card  number here</a></div>
+        </div>
+        <div class="field name">
+          <input id="name" required placeholder="Dave Kendell">
+          <label for="name">Full Name</label>
+        </div>
+        <div class="field expiration">
+          <input id="expiration" required placeholder="12/16" pattern="\d{1,2}/\d{2}">
+          <label for="expiration">Expiration</label>
+        </div>
+        <div class="card-type">
+          <input type="radio" name="card_type" value="visa" id="card_type_visa" checked>
+          <label class="card-type__logo visa" for="card_type_mastercard">Visa</label>
+  
+          <input type="radio" name="card_type" value="mastercard" id="card_type_mastercard">
+          <label class="card-type__logo mastercard" for="card_type_visa">Mastercard</label>
+        </div>
+      </div><div></div>
+      
+    </br>
+    
+    <div class = "imgArrow"><img src="assets/arrow.png" alt="arrow" height="40px" width="20px"></div> 
+    <div class="CardInstruction"><a>Click on the image to change your provider</a></div>
+
+    <div class="field csv">
+      <input id="csv" required pattern="\d{3}" placeholder="000" maxlength="3">
+      <label for="csv">CSV</label>
+    </div>
+
+      <div class="field submit">
+        <button class="btn-submit"><a href="sales.html" style="text-decoration: none; color: black;">⬅ Go Back </a></button>
+        <button class="btn-submit"><a href="invoice.html" style="text-decoration: none; color: black;">Complete➡</a></button>        
+      </div>
+    </div>
+  </form>
+  
+    <script src="js/payment_scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/load.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PROG 1124 - Group 1</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles_final.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body class="sb-nav-fixed">
+        </div>
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="logo horizontal-logo" src="assets/logo.jpg" height="15%" width="15%" alt="BeyondX logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Orders
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <a class="dropdown-item" href="cus_order.html">Customer Orders</a>
+                      <a class="dropdown-item" href="inv_order.html">Inventory Orders</a>
+                      <a class="dropdown-item" href="sale_main.html">Sales</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Inventory
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      <a class="dropdown-item" href="inventory.html">Inventory</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="items.html">Items</a>
+                    </div>
+                  </li> 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Personnals
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <a class="dropdown-item" href="customer.html">Customers</a>
+                      <a class="dropdown-item" href="supplier.html">Suppliers</a>
+                      <a class="dropdown-item" href="staff.html">Staff</a>
+                      <a class="dropdown-item" href="user.html">User</a>
+                      <a class="dropdown-item" href="profile.html">Profile</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">Reports</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Customers
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple" class="list">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer ID</th>
+                                            <th>Customer First Name</th>
+                                            <th>Customer Last Details</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Postal Code</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                          <th>Customer ID</th>
+                                            <th>Customer First Name</th>
+                                            <th>Customer Last Details</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Postal Code</th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>159</td>
+                                            <td>John</td>
+                                            <td>Shown</td>
+                                            <td>john@gmail.com</td>
+                                            <td>528-255-3655</td>
+                                            <td>L4B 1K3</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>157</td>
+                                          <td>Roman</td>
+                                          <td>Lesner</td>
+                                          <td>lesner@gmail.com</td>
+                                          <td>524-358-3655</td>
+                                          <td>R4F 2U3</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>125</td>
+                                          <td>Brock</td>
+                                          <td>Reigns</td>
+                                          <td>brock@gmail.com</td>
+                                          <td>588-888-5555</td>
+                                          <td>Y4D 6Y3</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>559</td>
+                                          <td>Lily</td>
+                                          <td>Fery</td>
+                                          <td>fery@gmail.com</td>
+                                          <td>518-833-5225</td>
+                                          <td>4E5 H5E</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>588</td>
+                                          <td>Amrith</td>
+                                          <td>pal</td>
+                                          <td>pal@gmail.com</td>
+                                          <td>518-833-9999</td>
+                                          <td>G5E 1E3</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>999</td>
+                                          <td>Sanny</td>
+                                          <td>Johns</td>
+                                          <td>sunny@gmail.com</td>
+                                          <td>888-987-2568</td>
+                                          <td>I3R 2E4</td>
+                                            <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                        </tr>
+                                        <tr>
+                                          <td>159</td>
+                                          <td>John</td>
+                                          <td>Shown</td>
+                                          <td>john@gmail.com</td>
+                                          <td>528-255-3655</td>
+                                          <td>L4B 1K3</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>157</td>
+                                        <td>Roman</td>
+                                        <td>Lesner</td>
+                                        <td>lesner@gmail.com</td>
+                                        <td>524-358-3655</td>
+                                        <td>R4F 2U3</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>125</td>
+                                        <td>Brock</td>
+                                        <td>Reigns</td>
+                                        <td>brock@gmail.com</td>
+                                        <td>588-888-5555</td>
+                                        <td>Y4D 6Y3</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>559</td>
+                                        <td>Lily</td>
+                                        <td>Fery</td>
+                                        <td>fery@gmail.com</td>
+                                        <td>518-833-5225</td>
+                                        <td>4E5 H5E</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>588</td>
+                                        <td>Amrith</td>
+                                        <td>pal</td>
+                                        <td>pal@gmail.com</td>
+                                        <td>518-833-9999</td>
+                                        <td>G5E 1E3</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>999</td>
+                                        <td>Sanny</td>
+                                        <td>Johns</td>
+                                        <td>sunny@gmail.com</td>
+                                        <td>888-987-2568</td>
+                                        <td>I3R 2E4</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                      <tr>
+                                        <td>125</td>
+                                        <td>Brock</td>
+                                        <td>Reigns</td>
+                                        <td>brock@gmail.com</td>
+                                        <td>588-888-5555</td>
+                                        <td>Y4D 6Y3</td>
+                                          <td><a href="#Edit_form" id="Edit_pop" button type="button" class="btn btn-primary">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-danger" onclick="onDelete(this)">Delete</button></button></td>
+                                      </tr>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="margin-left: 1%;">
+                                <a href="#insert_form" id="insert_pop"><button class="btn btn-success">Add New Record</button></a>
+                            </div> 
+                            <br>                           
+                        </div>
+                    </div>
+                
+                    <a href="#x" class="overlay" id="Edit_form"></a>
+                    <div class="popup">
+                        <h2>Edit</h2>
+                    <div>
+                    <label for="upc">Customer ID</label>
+                    <input type="text" id="upc" readonly="" value="15048"/>
+                    </div>
+                    <div>
+                    <label for="name">Customer FIrst Name</label>
+                    <input type="text" id="name" value="John" placeholder="eg: John"/>
+                    </div>
+                    <div>
+                        <label for="detail">Customer Last Name</label>
+                        <input type="text" id="detail" value="Bans" placeholder="eg: Bans"/>
+                    </div>
+                    <div>
+                        <label for="price">Email</label>
+                        <input type="text" id="price" value="john@gmail.com" placeholder="eg: john@gmail.com"/>
+                    </div>
+                    <div>
+                      <label for="qty">Phone Number</label>
+                      <input type="text" id="qty" value="647-888-598" placeholder="eg: 647-888-598"/>
+                  </div>
+                  <div>
+                    <label for="suo">Postal Code</label>
+                    <input type="text" id="sup" value="3R4 P8Y" placeholder="eg: 3R4 P8Y"/>
+                </div>
+                    <input type="button" value="Save" class="btn btn-primary" onclick="cnf()" href="#close"/>
+                    <a class="close" href="#close"></a>
+                </div>
+
+                
+                    <a href="#x" class="over" id="insert_form"></a>
+                    <div class="popup2">
+                        <h2>Add Customer</h2>
+                        <div>
+                          <label for="upc">Customer ID</label>
+                          <input type="text" id="upc1" readonly="" value="150258"/>
+                          </div>
+                          <div>
+                          <label for="name">Customer First Name</label>
+                          <input type="text" id="name1" value="" placeholder="eg: John"/>
+                          <ul class="input-requirements">
+                            <li>Enter legal Firstname.</a></li>
+                          </ul>
+                          </div>
+                          <div>
+                              <label for="detail">Customer Last Name</label>
+                              <input type="text" id="detail1" value="" placeholder="eg: Bans"/>
+                              <ul class="input-requirements">
+                                <li>Enter legal Lastname.</a></li>
+                              </ul>
+                          </div>
+                          <div>
+                              <label for="price">Email</label>
+                              <input type="text" id="price1" value="" placeholder="eg: John@gmail.com"/>
+                          </div>
+                          <div>
+                            <label for="qty">Phone Number</label>
+                            <input type="text" id="qty1" value="" placeholder="eg: 647-888-598"/>
+                            <ul class="input-requirements">
+                              <li>Enter 10 digit mobile number</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                          <label for="suo">Postal Code</label>
+                          <input type="text" id="sup1" value="" placeholder="eg: 3R4 P8Y"/>
+                      </div>
+                    <input type="button" value="Submit" class="btn btn-primary" onclick="add()" href="#close"/>
+                    <a class="close" href="#close"></a>
+                </div>
+                </main>
+            </div>
+        </div>
+        <!--Footer-->
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Inventory</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inventory.html">Inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="staff.html">Sales</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Orders</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cust_order.html">Customer Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inv_order.html">Inventory Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="supplier.html">Suppliers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Contact & Support</span>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link"><i class="fas fa-phone"></i>(637) 558-2256</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-comments"></i>Live chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        
+        <div class="row text-center">
+          
+          <div class="col-md-12 box">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              </li>
+            </ul>
+          </div>            
+        </div>
+      </div>
+      <br>
+      <div class="col-md-12 box" style="padding-left: 46%;">
+        <span class="copyright quick-links">Copyright &copy; LamdaX <script>document.write(new Date().getFullYear())</script>
+        </span>
+      </div>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts_final.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            function cnf() {
+                let name = document.getElementById("name").value;
+                let detail = document.getElementById("detail").value;
+                let price = document.getElementById("price").value;
+                let qty = document.getElementById("qty").value;
+                let sup = document.getElementById("sup").value;
+                let alt = "";
+                let count = 0;
+                if(name === ""){
+                    alt += "[First Name] "
+                    count += 1;
+                }
+                if(detail === ""){
+                    alt += "[Last Name] "
+                    count += 1;
+                }
+                if(price === ""){
+                    alt += "[Email] "
+                    count += 1;
+                }
+                if(qty === ""){
+                    alt += "[Phone Number] "
+                    count += 1;
+                }
+                if(sup === ""){
+                    alt += "[Postal Code] "
+                    count += 1;
+                }
+                alt += "field/fields are emty";
+                if(count > 0){
+                    alert(alt);
+                }
+                else{
+                    if (confirm("Confirm record edit")){
+                    history.go(-1);
+                    }
+                }
+                
+            }
+            function add() {
+              let name = document.getElementById("name").value;
+                let detail = document.getElementById("detail").value;
+                let price = document.getElementById("price").value;
+                let qty = document.getElementById("qty").value;
+                let sup = document.getElementById("sup").value;
+                let alt = "";
+                let count = 0;
+                if(name === ""){
+                    alt += "[First Name] "
+                    count += 1;
+                }
+                if(detail === ""){
+                    alt += "[Last Name] "
+                    count += 1;
+                }
+                if(price === ""){
+                    alt += "[Email] "
+                    count += 1;
+                }
+                if(qty === ""){
+                    alt += "[Phone Number] "
+                    count += 1;
+                }
+                if(sup === ""){
+                    alt += "[Postal Code] "
+                    count += 1;
+                }
+                alt += "field/fields are emty";
+                if(count > 0){
+                    alert(alt);
+                }
+                else{
+                    if (confirm("Confirm record edit")){
+                    history.go(-1);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
