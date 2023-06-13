@@ -29,6 +29,9 @@ h1{
     
 }
 
+
+
+
 h2{
   font-weight: bolder;
   color: #0f0a03;
@@ -142,6 +145,115 @@ label.validation-error{
     color: #ffffff;
     text-decoration: none;
   }
+  .icon-shape {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    border-radius: 0.75rem;
+  }
+  
+  .icon-shape i {
+    color: #fff;
+    opacity: 0.8;
+    top: 11px;
+    position: relative;
+  }
+  
+  .icon-shape .fa {
+    top: 14px;
+  }
+  
+  .icon-xxs {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon-xxs i {
+    top: -4px;
+    font-size: .5rem;
+  }
+  
+  .icon-xs {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-xs i {
+    top: -4px;
+    font-size: .5rem;
+  }
+  
+  .icon-sm {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .icon-sm i {
+    top: 2px;
+    font-size: .65rem;
+  }
+  
+  .icon-md {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .icon-md i {
+    top: 22%;
+    font-size: 0.875rem;
+  }
+  
+  .icon-md.icon-striped {
+    background-position-x: 85px;
+    background-position-y: 85px;
+  }
+  
+  .icon-md.icon-striped i {
+    top: 11%;
+    margin-left: -10px;
+    font-size: 0.875rem;
+  }
+  
+  .icon-lg {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .icon-lg i {
+    top: 31%;
+    font-size: 1.25rem;
+  }
+  
+  .icon-lg.icon-striped {
+    background-position-x: 111px;
+    background-position-y: 111px;
+  }
+  
+  .icon-lg.icon-striped i {
+    top: 21%;
+    margin-left: -15px;
+  }
+  
+  .icon-xl {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.75rem;
+  }
+  
+  .icon-xl i {
+    top: 37%;
+    font-size: 1.6rem;
+  }
+  
+  .icon-xl.icon-striped {
+    background-position-x: 80px;
+    background-position-y: 80px;
+  }
+  
+  .icon-xl.icon-striped i {
+    top: 30%;
+    margin-left: -15px;
+  }
   
   ::selection {
     background: #dbdad7;
@@ -158,6 +270,7 @@ label.validation-error{
     margin-block-start: 2rem;
     margin-block-end: 2rem;
   }
+
 
   footer {
     padding: 2rem 0;
@@ -252,6 +365,9 @@ label.validation-error{
 .column:last-child {
   margin-right: 0;
 }
+
+
+
 @media screen and (max-width: 980px) {
   .columns .column {
     margin-bottom: 5px;
